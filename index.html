@@ -13,7 +13,7 @@
     <title>Trivia Game</title>
 </head>
 <body>
-    <div class="welcomeContainer">
+    <div class="jumbotron">
         <h1 class="display-4">Star Wars Trivia</h1>
         <p class="lead">You will have 60 seconds to answer 9 questions!</p>
         <hr class="my-4">
@@ -21,16 +21,17 @@
             <button type="button" id="begin" class="btn btn-primary">1 2 3 TRIVIA!</button>
         </p>
     </div>
-    
-    <div class="questionsContainer">
-        <h1 class="display-4">Good Luck!</h1>
-        <div class="timeLeft">Time Left:
-            <div id="countdownTimer">60</div>
+    <container class="container">
+        <div class="questionsContainer">
+            <h1>Star Wars Trivia</h1>
+            <div class="timeLeft">Time Left:
+                <div id="countdownTimer">60</div>
+            </div>
         </div>
         <div class="questionsAnswered">
             <button type="button" id="submit" class="btn btn-primary">I'm Finished</button>
         </div>
-    </div>
+    </container>
     <script src="assets/javascript/app.js"></script>
 </body>
 </html>

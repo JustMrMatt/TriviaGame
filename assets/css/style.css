@@ -1,11 +1,16 @@
 body {
     background-image: url(../images/AT-AT.jpg);
 }
-
-.welcomeContainer {
+.jumbotron {
     text-align: center;
+    background: rgba(255, 255, 255, 0.5);
+    margin-top: 50px;
 }
-
 .questionsContainer {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5);
+    margin-top: 50px;
+}
+.questionsAnswered {
     text-align: center;
 }

@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    $(".container").hide();
+
     var questions = [
         {
             question: "What is Darth Vader's true name?", 
@@ -66,21 +68,24 @@ $(document).ready(function () {
 
     
     $("#begin").on("click", function () {
-        $("#begin").hide();
-        $(".questionsContainer").show();
+        $(".jumbotron").hide();
+        $(".container").show();
 		//countdown(60);
         questionDisplay();
     });
 
     var questionDisplay = function() {
-        $(".questionsContainer").empty();
-        
+                
         for (var i = 0; i < 10; i++) {
             $(".questionsContainer").append("<div class='questionBlock'>" + questions[i].question + "</div>");
+
             for (var q = 0; q <= 3; q++) {
-                $(".questionsContainer").append("<div class='answerBlock'>" + questions[i].options[q] + "</div>");
+                var radio=$("<input type='radio'>"+questions[i].options[q]+"</input>");
+                radio.attr("name", questions[i].identifier);
+                $(".questionsContainer").append(radio);
+
             }
-            $(".questionsAnswered").append("<hr />");
         }
+        $(".questionsAnswered").append();
     }
 })
