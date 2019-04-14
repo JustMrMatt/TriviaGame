@@ -1,16 +1,36 @@
 body {
     background-image: url(../images/AT-AT.jpg);
+    background-size: cover;
 }
 .jumbotron {
     text-align: center;
     background: rgba(255, 255, 255, 0.5);
     margin-top: 50px;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 .questionsContainer {
     text-align: center;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.65);
     margin-top: 50px;
+    font-size: 24px;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 .questionsAnswered {
     text-align: center;
+    margin-top: 20px;
+}
+
+.questionsblock {
+    margin-top: 5px;
+}
+
+.answerSpan {
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.input {
+    margin-bottom: 25px;
 }
